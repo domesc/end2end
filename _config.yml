@@ -1,12 +1,20 @@
 # Build settings
 permalink   : /blog/:year/:title/
 markdown    : kramdown
+kramdown:
+  input: GFM
 highlighter : pygments
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+gist:
+  noscript: false
 
 paginate: 3
 paginate_path: "/blog/page/:num/"
 comments: true
+future: true
 
 source: source
 destination: _site
@@ -15,30 +23,30 @@ sass:
   style: compressed # expanded
 
 # SEO settings
-title: end2end
-description: "A free Jekyll theme for download"
+title: domesc blog
+description: ""
 keywords: "Jekyll, theme, free, download, SEO, blog, web"
-url: http://nandomoreira.me
-baseurl: "/end2end"
-# baseurl: ""
+url: https://domesc.github.io/
+#baseurl: "/home"
+baseurl: ""
 
 # google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/end2end
-disqus_shortname: "nandothemes"
-disqus_site_shortname: "nandothemes"
+repo: http://github.com/domesc
+disqus_shortname: "domesc"
+disqus_site_shortname: "domesc.github.io"
 
 # Author settings
 author:
-  name      : Fernando Moreira
-  job       : Frontend Engineer
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb     : /images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  twitter   : http://twitter.com/nandomoreirame
-  facebook  : http://facebook.com/fernando.dev
-  linkedin  : http://linkedin.com/in/nandomoreirame
+  name      : Domenico Scarmozzino
+  job       : Software and Data Engineer
+  bio       : "Life is like riding a bicycle. To keep your balance, you must keep moving."
+  thumb     : /images/author.png
+  email     :
+  url       : http://domesc.github.io
+  github    : http://github.com/domesc
+#  twitter   : http://twitter.com/nandomoreirame
+#  facebook  : http://facebook.com/fernando.dev
+  linkedin  : https://www.linkedin.com/in/domenico-scarmozzino-06731345
 
 # navbar pages
 navbar:
